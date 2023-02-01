@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Marvel | MGN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__body">
+        <div class="modal__body-img"><img src="" alt="" /></div>
+        <div class="modal__body-details">
+          <div class="modal__body-details--info">
+            <h3></h3>
+            <h4>Creators</h4>
+            <span class="modal_body_info_creators"></span>
+            <h4>Characters</h4>
+            <span class="modal_body_info_characters"></span>
+            <h4>Description</h4>
+            <p class="modal_body_info_description"></p>
+            <h4>Number from pages</h4>
+            <span class="modal_body_info_pags"></span>
+            <h4>Last actualization</h4>
+            <span class="modal_body_info_att"></span>
+          </div>
+          <div class="modal__buttons">
+            <button class="modal__buttons--shopp">Shopp</button>
+            <button class="modal__buttons--closeModal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HEADER---HOME -->
+    <header id="home">
+      <h1>Marvel Collection Comics</h1>
+    </header>
+
+    <!-- NAV---MENU -->
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#comics">Comics</a></li>
+        <li><a href="#creator">Creator</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECTION---ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <blockquote cite="https://www.marvel.com/corporate/about">
+        <p>
+          A Marvel Entertainment, LLC, uma subsidiária integral da The Walt
+          Disney Company, é uma das empresas de entretenimento baseadas em
+          personagens mais proeminentes do mundo, construída em uma biblioteca
+          comprovada de mais de 8.000 personagens apresentados em uma variedade
+          de mídias ao longo de setenta e cinco anos. . A Marvel utiliza suas
+          franquias de personagens em entretenimento, licenciamento e
+          publicação. Para mais informações, visite
+          <a href="https://www.marvel.com/" target="_blank">marvel.com</a>. ©
+          2023 MARVEL
+        </p>
+      </blockquote>
+    </section>
+
+    <!-- MAIN---COMICS -->
+    <main id="comics">
+      <h2>Comics</h2>
+      <div class="cards"></div>
+    </main>
+
+    <!-- FOOTER---CREATOR -->
+
+    <footer id="creator">
+      <hr class="line" />
+      <div class="dev">
+        <p>
+          Developer by
+          <a href="https://www.linkedin.com/in/eomgn/"
+            >Matheus Gabriel Nogueira</a
+          >
+        </p>
+      </div>
+
+      <div class="social-links">
+        <a href="https://github.com/eomgn" target="_blank"
+          ><img src="./assets/gh.svg" alt="GitHub - Matheus Gabriel Nogueira"
+        /></a>
+
+        <a href="https://www.linkedin.com/in/eomgn/" target="_blank"
+          ><img src="./assets/in.svg" alt="Linkedin- Matheus Gabriel Nogueira"
+        /></a>
+      </div>
+    </footer>
+    <div class="modal"></div>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+  </body>
+</html>
