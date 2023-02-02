@@ -74,7 +74,6 @@ function closeModal() {
 function shopp() {
   Swal.fire({
     width: '80rem',
-    height: '40rem',
     icon: 'success',
     title: 'Congratulations',
     text: 'Finished using from my aplication, thank you',
