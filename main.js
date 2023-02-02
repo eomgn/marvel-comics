@@ -22,7 +22,7 @@ $closeModal.addEventListener('click', closeModal)
 $modalShopp.addEventListener('click', shopp)
 
 fetch(
-  `http://gateway.marvel.com/v1/public/comics?ts=${timesTamp}&apikey=${apiKey}&hash=${md5}`
+  `https://gateway.marvel.com/v1/public/comics?ts=${timesTamp}&apikey=${apiKey}&hash=${md5}`
 )
   .then((response) => {
     return response.json()

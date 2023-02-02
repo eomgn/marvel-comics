@@ -22,14 +22,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - CSS
 - JavaScript
 - API Marvel
-- API SweetAlert2
+- Lib SweetAlert2
 
 ## 💻 Projeto
 
 O projeto é um desafio pessoal para consumo de API aonde realizei o consumo da API Marvel aonde é então feito um callback de algumas histórias em quadrinhos e também o consumo da biblioteca SweetAlert2 para gerar um alerta ao clicar no botão Shopp(comprar).
 É um projeto totalmente responsivo para qualquer tamanho de tela desde a menor (celular) com 320px até uma com mais de 1024px.
-
-Foi um desafio bem interessante de realizar devido ter sido o consumo de duas APIs.
 
 ---
 
