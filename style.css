@@ -189,7 +189,6 @@ header h1 {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  margin-bottom: 4rem;
 }
 
 blockquote p::first-letter {
@@ -313,7 +312,6 @@ blockquote a:hover {
 @media (max-width: 560px) {
   body {
     flex-direction: column;
-    overflow: hidden;
   }
 
   .modal__body {
