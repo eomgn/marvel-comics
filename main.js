@@ -14,12 +14,12 @@ const $modalCharacters = document.querySelector('.modal_body_info_characters')
 const $modalDescription = document.querySelector('.modal_body_info_description')
 const $modalPags = document.querySelector('.modal_body_info_pags')
 const $modalAtt = document.querySelector('.modal_body_info_att')
-
 const $modalShopp = document.querySelector('.modal__buttons--shopp')
 const $closeModal = document.querySelector('.modal__buttons--closeModal')
 /* variables modal - end */
 
 $closeModal.addEventListener('click', closeModal)
+$modalShopp.addEventListener('click', shopp)
 
 fetch(
   `http://gateway.marvel.com/v1/public/comics?ts=${timesTamp}&apikey=${apiKey}&hash=${md5}`
@@ -69,22 +69,20 @@ function showModal() {
 
 function closeModal() {
   modal.classList.remove('visible')
-  $modalAside.classList.remove('active')
 }
 
-/*-----MENU FIXED------*/
-
-let menu = document.querySelector('.menu')
-let scroll = menu.offsetTop
-
-window.onscroll = () => {
-  menuFixed()
-}
-
-function menuFixed() {
-  window.pageYOffset > scroll
-    ? menu.classList.add('menuFixed')
-    : menu.classList.remove('menuFixed')
+function shopp() {
+  Swal.fire({
+    width: '80rem',
+    height: '40rem',
+    icon: 'success',
+    title: 'Congratulations',
+    text: 'Finished using from my aplication, thank you',
+    footer:
+      '<a href="https://www.linkedin.com/in/eomgn/" target="_blank style="color: #000">Has feedback?</a>',
+    color: '#000',
+    confirmButtonColor: '#0f0'
+  })
 }
 
 /*-----------*/

@@ -104,7 +104,7 @@ h4 {
 
 .modal__body-img {
   flex: 1;
-  margin-right: 2rem;
+  /*   margin-right: 2rem; */
 }
 
 .modal__body-img img {
@@ -116,6 +116,7 @@ h4 {
 
 .modal__body-details {
   flex: 1;
+  position: relative;
 }
 
 .modal__body-details.disabled {
@@ -136,6 +137,10 @@ h4 {
   right: 20px;
   bottom: 20px;
   gap: 10px;
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
 }
 
 button {
@@ -153,6 +158,15 @@ button {
 
 button:hover {
   opacity: 0.7;
+}
+
+.swal2-popup {
+  font-size: 1.6rem !important;
+  color: #000;
+}
+
+.swal2-popup a {
+  color: #000;
 }
 
 /* ---------HEADER--------- */
@@ -176,42 +190,6 @@ header h1 {
   -webkit-background-clip: text;
   color: transparent;
   margin-bottom: 4rem;
-}
-
-.menu {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-
-.menu.menuFixed {
-  backdrop-filter: blur(40px);
-  box-shadow: 0 0 10px 1px #000;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.menu ul li {
-  font-size: 3rem;
-  text-align: center;
-
-  cursor: pointer;
-}
-
-.menu ul li::after {
-  content: '';
-  width: 0%;
-  height: 0.3rem;
-  background-color: var(--text-red);
-  display: block;
-  transition: width 0.2s ease-out;
-}
-
-.menu ul li:hover::after {
-  width: 100%;
 }
 
 blockquote p::first-letter {
@@ -306,16 +284,17 @@ blockquote a:hover {
     width: 100%;
     height: 100%;
     border-radius: 0;
-    flex-direction: column;
   }
 
   .modal__body-img {
-    margin-right: 0;
+    margin-right: 2rem;
+    width: 100%;
   }
 
   .modal__body-img img {
     width: 100%;
     max-height: 30rem;
+    min-height: 100%;
   }
 
   .modal_body_info_creators,
@@ -334,6 +313,12 @@ blockquote a:hover {
 @media (max-width: 560px) {
   body {
     flex-direction: column;
+    overflow: hidden;
+  }
+
+  .modal__body {
+    overflow: scroll;
+    flex-direction: column;
   }
 
   header h1 {
@@ -347,6 +332,10 @@ blockquote a:hover {
   .modal__body-img img {
     width: 100%;
     max-height: 30rem;
+  }
+
+  .modal__buttons {
+    position: initial;
   }
 
   .modal__body-details h3 {
